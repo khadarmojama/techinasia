@@ -1,3 +1,76 @@
-body{
-    background: #000;
+:root{
+    --headerbg: #f5f5f5;
+    --subheaderbg: #ffffff;
+    --bodybg: #fff8f7;
+    --buttonbg: #e10000;
+    --buttonhoverbg: #7a0000;
+    --footerbg: #171717;
+    --subfooterbg: #000000;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul li{
+    list-style: none;
+}
+.mainheader{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--headerbg);
+    padding: 10px;
+    height: 60px;
+}
+header ul{
+    display: flex;
+}
+header h2{
+    font-size: 20px;
+}
+header h2 span{
+    font-weight: 400;
+}
+header li{
+    margin: 0 8px;
+    
+}
+
+.mainheader button{
+    padding: 2px;
+    margin: 0 5px;
+    border: none;
+}
+
+/* SUB HEADER CSS */
+.subheader{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    height: 60PX;
+    background: #f5f2f2;
+    align-items: baseline;
+    
+
+}
+.subheader button{
+   margin: 0 5px;
+   background: var(--buttonbg);
+   padding: 5px 10px;
+   border: none;
+   border-radius: 17px;
+   color: var(--subheaderbg);
+   letter-spacing: 1px;
+}
+#btn{
+    background: var(--subheaderbg);
+    border: 2px solid #e10000;
+    color: #e10000;
 }
