@@ -1,0 +1,63 @@
+/* body section 1 */
+.section1{
+    display: flex;
+    padding: 20px ;
+    margin: 4% 10%;
+    box-shadow: #000000;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.03);
+    
+}
+.logos{
+    display: flex;
+}
+.logos div{
+    width: 100px;
+}
+.logos img{
+    height: 50px;
+}
+.section1 button{
+    margin: 0 5px;
+   background: var(--buttonbg);
+   padding: 5px 10px;
+   border: none;
+   border-radius: 17px;
+   color: var(--subheaderbg);
+   letter-spacing: 1px;
+
+}
+
+.news{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 5px;
+    margin: 0 10%;
+    
+}
+.post{
+    width: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 5px 15px 10px 5px rgba(0, 0, 0, 0.03);
+    row-gap: 10px;
+    margin: 0 10px;
+    
+}
+.post img{
+    border-radius: 3px 3px 0 0;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 5px;
+    height: auto;
+}
+
+.post div{
+    display: flex;
+    gap: 10px;
+    margin-left: 5px;
+}
+
+.column2 .post h2{
+    text-align: center;
+}

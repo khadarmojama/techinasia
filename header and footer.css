@@ -52,6 +52,7 @@ header li{
 /* SUB HEADER CSS */
 .subheader{
     display: flex;
+    flex-wrap: wrap;
     padding: 10px;
     justify-content: space-around;
     height: 60PX;
@@ -73,4 +74,40 @@ header li{
     background: var(--subheaderbg);
     border: 2px solid #e10000;
     color: #e10000;
+}
+
+
+/* footer  */
+
+#section1{
+    background: var(--footerbg);
+    color: var(--subheaderbg);
+    display: grid; 
+    grid-template-columns: repeat(11,1fr);
+    padding: 48px;
+   
+}
+
+.div2{
+    grid-column: 1 / span 3
+}
+.div2{
+    display: grid;
+    grid-column: 4 / span 8;
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+}
+
+#section2{
+    background: #000000;
+    color: #ffffff;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#section2 a{
+    padding-right: 10px;
+   
+    margin-right: 10px;
 }
