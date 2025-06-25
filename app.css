@@ -38,7 +38,7 @@
     
 }
 .post{
-    width: auto;
+  
     box-sizing: border-box;
     padding: 10px;
     box-shadow: 5px 15px 10px 5px rgba(0, 0, 0, 0.03);
@@ -71,19 +71,51 @@
 
 
 @media (max-width: 600px){
+    body{
+        
+    }
+    h2{
+        font-size: 1rem;
+    }
     .section1{
         flex-direction: column;
         text-align: center;
+        padding: 10px ;
+        margin: 2rem;
         
     }
     .logos{
         width: 100%;
         flex-wrap: wrap;
-        flex-shrink: 1;
+        justify-content: center;
     }
 
+    .logos div{
+    width: 80px;
+    }  
+
+     .logos img{
+        height: 30px;
+    }
+
+    .section1 button{
+
+        margin: 0 3px;
+        background: var(--buttonbg);
+        padding: 5px 15px;
+        border-radius: 15px;
+        color: var(--subheaderbg);
+        letter-spacing: 0;
+
+    }
     .news{
         grid-template-columns: 1fr;
         
     }
+    .post{
+        margin: 5px;
+        
+    }
+
+    
 }

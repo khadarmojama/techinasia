@@ -113,3 +113,26 @@ header li{
     margin-right: 10px;
 }
 
+@media (max-width: 1000px){
+
+}
+
+@media (max-width: 600px){
+    .mainheader{
+        flex-wrap: wrap;
+    }
+    header h2{
+        font-size: 16px;
+    }
+    header li{
+        margin: 2px;
+    }
+    .subheader{
+        visibility: hidden;
+    }
+
+    footer{
+        visibility: hidden;
+    }
+}
+
