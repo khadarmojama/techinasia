@@ -27,6 +27,7 @@ ul li{
     align-items: center;
     background: var(--headerbg);
     padding: 10px;
+    
     height: 60px;
 }
 header ul{
@@ -111,3 +112,4 @@ header li{
    
     margin-right: 10px;
 }
+
