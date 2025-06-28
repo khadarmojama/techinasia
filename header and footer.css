@@ -50,9 +50,9 @@ body{
 
 .mainheader button{
     border: none;
-    background: #f9f3f3;
-    padding: 5px;
-    border-radius: 10px;
+    background: #ffe4e4;
+    padding: 10px 5px;
+    border-radius: 15px;
 }
 
 .mainheader button a{
@@ -72,13 +72,14 @@ body{
     
 }
 
-
+/* waa subheader ka hoose */
 .subheader{
     display: flex;
     align-items: center;
     padding: 10px;
     justify-content: space-around;
     height: 60PX;
+    background: #fff0f0;
 
 }
 .subheader ul{
