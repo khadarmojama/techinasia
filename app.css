@@ -1,4 +1,5 @@
 /* body section 1 */
+
 .section1{
     display: flex;
     padding: 20px ;
@@ -6,6 +7,7 @@
     box-shadow: #000000;
     border-radius: 5px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.03);
+    background: #ffffff;
 
     
 }
@@ -19,15 +21,22 @@
 .logos img{
     height: 50px;
 }
-.section1 button{
-    margin: 0 5px;
+#section1btn{
+  
+   margin-top: 10px;
    background: var(--buttonbg);
    padding: 5px 10px;
    border: none;
    border-radius: 17px;
    color: var(--subheaderbg);
    letter-spacing: 1px;
+   background: #ff0000;
 
+}
+#section1btn a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
 }
 
 .news{
@@ -38,31 +47,84 @@
     
 }
 .post{
-  
     box-sizing: border-box;
     padding: 10px;
     box-shadow: 5px 15px 10px 5px rgba(0, 0, 0, 0.03);
-    row-gap: 10px;
-    margin: 0 10px;
+    margin: 10px;
+    margin-top: 0;
+
+
     
 }
 .post img{
     border-radius: 3px 3px 0 0;
     width: 100%;
     padding: 0;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
     height: auto;
 }
 
 .post div{
     display: flex;
-    gap: 10px;
+    gap: 6px;
     margin-left: 5px;
+    
 }
 
 .column2 .post h2{
     text-align: center;
 }
+
+.sidebar{
+    background: #ffffff;
+    height: 290px;
+    padding: 10px;
+    padding-left: 25px;
+    box-shadow: 0px 5px 10px 0px rgba(32, 32, 32, 0.1);
+    border-radius: 10px;
+}
+
+.sidebar a{
+    color: #000000;
+    text-decoration: none;
+    
+    
+}
+
+/* latest stories */
+
+.latest-stories{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px auto;
+    justify-content: center;
+    width: 60%;
+    padding: 20px;
+    
+}
+
+.story{
+    width: 300px;
+    box-shadow: 0px 5px 10px 0px rgba(32, 32, 32, 0.1);
+    margin: 20px;
+    border-radius: 5px;
+   
+}
+.story .text{
+    padding: 10px;
+}
+.story img{
+    width: 100%;
+}
+
+.story .text div #post-date{
+    
+    margin-left: 8px;
+    color: #8a8a8a;
+    
+    
+}
+/* --------------------------------------------------- */
 
 @media (max-width: 1000px){
 
@@ -80,8 +142,7 @@
     .section1{
         flex-direction: column;
         text-align: center;
-        padding: 10px ;
-        margin: 2rem;
+     
         
     }
     .logos{
@@ -105,11 +166,13 @@
         padding: 5px 15px;
         border-radius: 15px;
         color: var(--subheaderbg);
-        letter-spacing: 0;
+        letter-spacing: 10px;
 
     }
     .news{
         grid-template-columns: 1fr;
+        gap: 2px;
+        margin: 0;
         
     }
     .post{
@@ -117,5 +180,31 @@
         
     }
 
+    .sidebar{
+        visibility: hidden;
+    }
+
+    /* latest stories */
+
+    .latest-stories{
+    display: grid;
+    grid-template-columns: 1fr;
     
+    margin: 10px auto;
+    justify-content: center;
+    width: 60%;
+    padding: 0px;
+    
+}
+
+
+    .story{
+
+    width: 100%;
+    box-shadow: 0px 5px 10px 0px rgba(32, 32, 32, 0.1);
+    margin: 0;
+    border-radius: 5px;
+   
+    }
+
 }

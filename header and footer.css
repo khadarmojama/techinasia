@@ -1,138 +1,177 @@
-:root{
-    --headerbg: #f5f5f5;
-    --subheaderbg: #ffffff;
-    --bodybg: #fff8f7;
-    --buttonbg: #e10000;
-    --buttonhoverbg: #7a0000;
-    --footerbg: #171717;
-    --subfooterbg: #000000;
-}
-
-*{
-    padding: 0;
+body{
     margin: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    background: #fff8f7;
+    font-family: Arial, Helvetica, sans-serif;
 }
-a{
-    text-decoration: none;
-    color: inherit;
-}
-ul li{
-    list-style: none;
-}
+
+
 .mainheader{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background: var(--headerbg);
-    padding: 10px;
-    
-    height: 60px;
-}
-header ul{
-    display: flex;
-}
-header h2{
-    font-size: 20px;
-}
-header h2 span{
-    font-weight: 400;
-}
-header li{
-    margin: 0 8px;
-    
-}
-
-.mainheader button{
-    padding: 2px;
-    margin: 0 5px;
-    border: none;
-}
-
-/* SUB HEADER CSS */
-.subheader{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    justify-content: space-around;
-    height: 60PX;
-    background: #f5f2f2;
-    align-items: baseline;
-    
-
-}
-.subheader button{
-   margin: 0 5px;
-   background: var(--buttonbg);
-   padding: 5px 10px;
-   border: none;
-   border-radius: 17px;
-   color: var(--subheaderbg);
-   letter-spacing: 1px;
-}
-#btn{
-    background: var(--subheaderbg);
-    border: 2px solid #e10000;
-    color: #e10000;
-}
-
-
-/* footer  */
-
-#section1{
-    background: var(--footerbg);
-    color: var(--subheaderbg);
-    display: grid; 
-    grid-template-columns: repeat(11,1fr);
-    padding: 48px;
+   background: #fff4f4; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100px;
+   font-family: Arial, Helvetica, sans-serif;
    
-}
-
-.div2{
-    grid-column: 1 / span 3
-}
-.div2{
-    display: grid;
-    grid-column: 4 / span 8;
-    grid-template-columns: repeat(5, minmax(100px, 1fr));
-}
-
-#section2{
-    background: #000000;
-    color: #ffffff;
-    height: 60px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-#section2 a{
-    padding-right: 10px;
    
+   
+   
+
+    
+}
+
+.headerlogo{
+    
+    height: 50px;
+    width: 200px;
+    
+    
+}
+
+.mainheader img{
+
+    width: 200px;
+}
+
+.mainheader ul{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+.mainheader ul li{
+    list-style: none;
     margin-right: 10px;
 }
 
-@media (max-width: 1000px){
+.mainheader ul li a{
+    text-decoration: none;
+    color: black;
 
 }
 
-@media (max-width: 600px){
+.mainheader button{
+    border: none;
+    background: #f9f3f3;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.mainheader button a{
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.mainheader button a:hover{
+    color: rgb(150, 144, 144);
+}
+.headerbtn {
+    margin: 50px;
+    display: flex;
+    gap: 5px;
+    
+}
+
+ footer{
+     background: #000;
+     color: #ffffff;
+     width: 100%;
+    }
+
+  footer li{
+      list-style: none;
+    }
+
+#footerlogo{
+    width: 100px;
+    
+}
+#footer1{
+    display: flex;
+    background: #000000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+.div1{
+    width: 30%;
+}
+.div2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    width: 40%;
+}
+
+
+#footer2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+#footer2 a{
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+
+
+/* media queries */
+
+@media (max-width: 600px) {
     .mainheader{
-        flex-wrap: wrap;
-    }
-    header h2{
-        font-size: 16px;
-    }
-    header li{
-        margin: 2px;
-    }
-    .subheader{
-        visibility: hidden;
+         
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 70px;
+
     }
 
-    footer{
-        visibility: hidden;
+  
+    .mainheader img{
+
+        width: 80px;
     }
+    .mainheader ul li{
+        list-style: none;
+        margin-right: 0;
+        
+
+    }
+    .mainheader ul li a{
+        font-size: 10px;
+    }
+
+    .mainheader button{
+        padding: 0;
+        border-radius: 0;
+}
+    
+    .headerbtn {
+    margin: 0;
+    display: flex;
+    gap: 0;
+    
+   
+   }
+
+
+   /* footer */
+   #footer1{
+     display: block;
+     
+   }
+   .div2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    font-size: 10px;
+    
 }
 
+
+}
