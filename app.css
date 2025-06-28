@@ -97,14 +97,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 10px auto;
+    margin-top: 0;
     justify-content: center;
     width: 60%;
     padding: 20px;
     
 }
+#latest{
+    margin-left: 100px;
+}
 
 .story{
-    width: 300px;
+    width: 400px;
     box-shadow: 0px 5px 10px 0px rgba(32, 32, 32, 0.1);
     margin: 20px;
     border-radius: 5px;
