@@ -182,7 +182,7 @@
     }
 
     .sidebar{
-        visibility: hidden;
+        visibility: visible;
     }
 
     /* latest stories */
